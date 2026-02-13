@@ -16,6 +16,8 @@ The analysis uses a synthetic dataset from Kaggle, which includes 54 features co
 - **Lifestyle & Environment:** Diet, Smoking, Water Quality, and Heavy Metals Exposure.
 - **Medical History:** Presence of Diabetes, Hypertension, and family history of kidney failure.
 
+**NOTE:** Read more about the dataset in the [project report](https://github.com/Prosper-133/Predicting-Chronic-Kidney-Disease-CKD-Using-Biomarkers/blob/main/Project%20Report.pdf)
+
 
 ## Key Exploratory Data Analysis (EDA) Insights
 
