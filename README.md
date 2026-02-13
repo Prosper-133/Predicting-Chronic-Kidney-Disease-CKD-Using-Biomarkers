@@ -1,2 +1,50 @@
-# Predicting-Chronic-Kidney-Disease-CKD-Using-Biomarkers
-An exploratory data analysis and visualization project that explain the link between some biomarkers and chronic kidney disease(CKD).  
+# Predicting Chronic Kidney Disease (CKD) Using Biomarkers 🩺
+
+## Project Overview
+Chronic Kidney Disease (CKD) is a global health crisis affecting approximately **850 million people**. It is currently the third fastest-growing cause of death globally. This project focuses on the exploratory data analysis (EDA) of a synthetic dataset containing **1,659 patient records** to understand the diagnostic power of various clinical biomarkers.
+
+The primary goal is to analyze the relationship between clinical measurements like **GFR**, **BUN**, and **Proteinuria** to see how effectively they signal kidney impairment, even in the early, asymptomatic stages.
+
+## Dataset Description
+The analysis uses a synthetic dataset from Kaggle, which includes 54 features covering:
+- **Demographics:** Age, Gender, Ethnicity, and Socio-economic status.
+- **Clinical Biomarkers:** GFR (Glomerular Filtration Rate), BUN (Blood Urea Nitrogen), Serum Creatinine.
+- **Lifestyle & Environment:** Diet, Smoking, Water Quality, and Heavy Metals Exposure.
+- **Medical History:** Presence of Diabetes, Hypertension, and family history of kidney failure.
+
+
+## Key Exploratory Data Analysis (EDA) Insights
+
+### 1. The GFR Paradox
+The analysis revealed that while a **GFR of 90+** is typically considered "normal," several patients in this category were still diagnosed with CKD.
+* **Insight:** Diagnosis in these cases is driven by **Proteinuria** (protein in the urine). This highlights that structural damage (leaking filters) often precedes the actual drop in filtration volume.
+
+### 2. Biomarker Distributions
+- **Mean GFR:** ~70.3 mL/min/1.73m² (indicating a population mostly in Stage 2 CKD).
+- **Mean BUN:** ~20.1 mg/dL.
+- **Mean Proteinuria:** ~2.5 g/day.
+- **Observation:** The dataset is perfectly clean with **zero missing values**, making it ideal for testing diagnostic workflows.
+
+### 3. The "Healthy" Outlier
+A unique discovery in the data was **exactly one patient** who presented with entirely normal biomarkers (Normal GFR, Normal BUN, and no Proteinuria) yet was still diagnosed with CKD. This serves as a critical reminder that while biomarkers are essential, comprehensive medical screening must account for outliers and external risk factors.
+
+
+
+### 4. Correlation Analysis
+As this is a synthetic dataset, the statistical correlation between lifestyle factors (like Water Quality or Medication Adherence) and clinical markers was found to be low. However, the **analytical workflow** established remains robust for application on real-world medical data.
+
+## Clinical Background: Why These Markers Matter
+- **Proteinuria:** Acts as a "driver" of the disease. Leaking protein is nephrotoxic, causing tubulointerstitial inflammation and permanent scarring (fibrosis).
+- **BUN:** An "indicator" of waste buildup. High levels signal that the kidney can no longer effectively clear metabolic byproducts.
+- **ACE Inhibitors:** The project references how these medications are used to lower internal kidney pressure and slow the progression of scarring.
+
+## How to Use This Repository
+1. **Clone the repo:** `git clone https://github.com/your-username/ckd-analysis.git`
+2. **Install Dependencies:** `pip install pandas seaborn matplotlib`
+3. **Run the Notebook:** Open `EDA_ckd.ipynb` to view the full visualization and correlation matrices.
+
+## Conclusions
+This project demonstrates that CKD is not a one-size-fits-all condition. By focusing on the interplay between GFR and Proteinuria, we can identify high-risk patients even when their primary lab results appear stable. This methodology is vital for moving from reactive treatment to proactive prevention.
+
+---
+*Note: This project was created for educational purposes using a synthetic dataset.* 
