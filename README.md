@@ -1,4 +1,7 @@
 # Predicting Chronic Kidney Disease (CKD) Using Biomarkers 🩺
+![Kidney](https://github.com/user-attachments/assets/e4f6c928-69a9-4751-9d6b-7f240578ccd3)
+
+*Stages of CKD* (UPMC)[https://www.upmc.com/services/kidney-disease/conditions/chronic-kidney-disease]
 
 ## Project Overview
 Chronic Kidney Disease (CKD) is a global health crisis affecting approximately **850 million people**. It is currently the third fastest-growing cause of death globally. This project focuses on the exploratory data analysis (EDA) of a synthetic dataset containing **1,659 patient records** to understand the diagnostic power of various clinical biomarkers.
@@ -34,6 +37,9 @@ The analysis revealed that while a **GFR of 90+** is typically considered "norma
 A unique discovery in the data was **exactly one patient** who presented with entirely normal biomarkers (Normal GFR, Normal BUN, and no Proteinuria) yet was still diagnosed with CKD. This serves as a critical reminder that while biomarkers are essential, comprehensive medical screening must account for outliers and external risk factors.
 
 <img width="911" height="549" alt="Normal Protein" src="https://github.com/user-attachments/assets/de5f6350-3c8b-4f0c-9f05-61680cb76a08" />
+
+
+### **Outlier Profile: The "Healthy" CKD Patient**
 
 | Feature | Value | Clinical Interpretation |
 | :--- | :--- | :--- |
