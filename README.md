@@ -1,7 +1,8 @@
 # Predicting Chronic Kidney Disease (CKD) Using Biomarkers 🩺
-![Kidney](https://github.com/user-attachments/assets/e4f6c928-69a9-4751-9d6b-7f240578ccd3)
+<img width="624" height="280" alt="image" src="https://github.com/user-attachments/assets/2e85ced3-1919-4d29-9280-ae7822dabef4" />
 
-*Stages of CKD* (UPMC)[https://www.upmc.com/services/kidney-disease/conditions/chronic-kidney-disease]
+
+*Stages of CKD* [sutterstock](https://www.shutterstock.com/image-vector/chronic-kidney-disease-stages-ckd-healthy-2598407695?trackingId=b84416d6-0509-4b69-8144-b5c438db18a2&listId=searchResults)
 
 ## Project Overview
 Chronic Kidney Disease (CKD) is a global health crisis affecting approximately **850 million people**. It is currently the third fastest-growing cause of death globally. This project focuses on the exploratory data analysis (EDA) of a synthetic dataset containing **1,659 patient records** to understand the diagnostic power of various clinical biomarkers.
