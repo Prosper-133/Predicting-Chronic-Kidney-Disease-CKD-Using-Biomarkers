@@ -1,5 +1,8 @@
 ## 🩺 Understanding Biomarkers and Risk Factors for Chronic Kidney Disease (CKD) Prevention
 
+<img width="337" height="149" alt="Kidney" src="https://github.com/user-attachments/assets/e335bafb-711e-4d71-8179-c4412cc9f0b4" />
+
+
 *Image Credit: [Shutterstock*](https://www.shutterstock.com/image-vector/chronic-kidney-disease-stages-ckd-healthy-2598407695?trackingId=b84416d6-0509-4b69-8144-b5c438db18a2&listId=searchResults)
 
 ---
@@ -67,7 +70,10 @@ The performance models generated below showcase the individual accuracy and coll
 
 ### 📊 Performance Summary: Diagnostic Accuracies vs. Mismatches
 
-The plot in **image_fc86fc.png** highlights how accurately each biomarker stands independently against the confirmed diagnostic state, alongside their unique misclassification profiles (False Alarms vs. Silent Cases):
+<img width="1589" height="593" alt="Performance Summary" src="https://github.com/user-attachments/assets/256a1705-9c20-40e1-9ed3-a31c570f9d37" />
+
+
+The plot highlights how accurately each biomarker stands independently against the confirmed diagnostic state, alongside their unique misclassification profiles (False Alarms vs. Silent Cases):
 
 * **Serum Creatinine** offers the highest individual diagnostic accuracy at **83.5%**, showing only 73 false alarms but leaving 200 cases silent.
 * **BUN Levels** hold the lowest isolated accuracy at **67.0%**, significantly prone to missing diagnoses with **479 silent cases**.
@@ -94,7 +100,10 @@ Because individual biomarkers are prone to distinct error profiles, clinical scr
 
 ## ⚠️ Environmental & Lifestyle Risk Profiles
 
-Beyond clinical labs, macro-environmental factors and lifestyle choices directly modulate renal microvascular stress. The twin-panel visualization in **image_fc8439.png** maps out the distinct prevalence rates of risk components between active CKD patients and healthy control populations:
+<img width="1590" height="691" alt="RFP Profiles" src="https://github.com/user-attachments/assets/6e10f337-7d13-4e2a-a932-cbf00fe8480b" />
+
+
+Beyond clinical labs, macro-environmental factors and lifestyle choices directly modulate renal microvascular stress. The twin-panel visualization maps out the distinct prevalence rates of risk components between active CKD patients and healthy control populations:
 
 * **Genetic Pre-disposition:** Family histories of Hypertension (**30.4%**) and Diabetes (**25.9%**) score significantly higher among active CKD patient profiles than healthy populations, functioning as core risk multipliers.
 * **Environmental Pressures:** Poor water quality and chemical/heavy metal tracking consistently correlate with elevated disease tracking, serving as a reminder that structural tissue protection requires strict systemic and environmental mitigation.
