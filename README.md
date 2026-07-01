@@ -1,74 +1,130 @@
-#  Understanding Biomarkers and Risk Factors for Chronic Kidney Disease (CKD) Prevention  🩺
+## 🩺 Understanding Biomarkers and Risk Factors for Chronic Kidney Disease (CKD) Prevention
 
-<img width="624" height="280" alt="image" src="https://github.com/user-attachments/assets/2e85ced3-1919-4d29-9280-ae7822dabef4" />
-
-*Stages of CKD* [shutterstock](https://www.shutterstock.com/image-vector/chronic-kidney-disease-stages-ckd-healthy-2598407695?trackingId=b84416d6-0509-4b69-8144-b5c438db18a2&listId=searchResults)
-
-## Project Overview
-Chronic Kidney Disease (CKD) is a global health crisis affecting approximately **850 million people**. It is currently the third fastest-growing cause of death globally. This project focuses on the exploratory data analysis (EDA) of a synthetic dataset containing **1,659 patient records** to understand the diagnostic power of various clinical biomarkers.
-
-The primary goal is to analyze the relationship between clinical measurements like **GFR**, **BUN**, and **Proteinuria** to see how effectively they signal kidney impairment, even in the early, asymptomatic stages.
-
-## Dataset Description
-The analysis uses a synthetic dataset from Kaggle, which includes 54 features covering:
-- **Demographics:** Age, Gender, Ethnicity, and Socio-economic status.
-- **Clinical Biomarkers:** GFR (Glomerular Filtration Rate), BUN (Blood Urea Nitrogen), Serum Creatinine.
-- **Lifestyle & Environment:** Diet, Smoking, Water Quality, and Heavy Metals Exposure.
-- **Medical History:** Presence of Diabetes, Hypertension, and family history of kidney failure.
-
-**NOTE:** For deeper understanding of the dataset, see the [project report](https://github.com/Prosper-133/Predicting-Chronic-Kidney-Disease-CKD-Using-Biomarkers/blob/main/Project_Report.pdf)
-
-## Key Exploratory Data Analysis (EDA) Insights
-
-### 1. The GFR Paradox
-The analysis revealed that while a **GFR of 90+** is typically considered "normal," several patients in this category were still diagnosed with CKD.
-
-<img width="860" height="549" alt="GFR_1" src="https://github.com/user-attachments/assets/a69ab8a1-0071-42f1-91d7-bfd2a71cbaba" />
-
-* **Insight:** Diagnosis in these cases is driven by **Proteinuria** (protein in the urine). This highlights that structural damage (leaking filters) often precedes the actual drop in filtration volume.
-
-<img width="893" height="549" alt="Normal Gfr" src="https://github.com/user-attachments/assets/38a84b09-07fa-4ae9-bb0b-4c1aa3df3663" />
-
-### 2. Biomarker Distributions
-- **Mean GFR:** ~70.3 mL/min/1.73m² (indicating a population mostly in Stage 2 CKD).
-- **Mean BUN:** ~20.1 mg/dL.
-- **Mean Proteinuria:** ~2.5 g/day.
-- **Observation:** The dataset is perfectly clean with **zero missing values**, making it ideal for testing diagnostic workflows.
-
-### 3. The "Healthy" Outlier
-A unique discovery in the data was **exactly one patient** who presented with entirely normal biomarkers (Normal GFR, Normal BUN, and no Proteinuria) yet was still diagnosed with CKD. This serves as a critical reminder that while biomarkers are essential, comprehensive medical screening must account for outliers and external risk factors.
-
-<img width="911" height="549" alt="Normal Protein" src="https://github.com/user-attachments/assets/de5f6350-3c8b-4f0c-9f05-61680cb76a08" />
-
-
-### **Outlier Profile: The "Healthy" CKD Patient**
-
-| Feature | Value | Clinical Interpretation |
-| :--- | :--- | :--- |
-| **Glomerular Filtration Rate (GFR)** | **90+ (Normal)** | The kidneys are filtering blood at a healthy volume. |
-| **Blood Urea Nitrogen (BUN)** | **Normal** | No toxic buildup of metabolic waste in the bloodstream. |
-| **Protein in Urine** | **Normal** | No signs of structural "leaking" in the kidney's filters. |
-| **Family History of Diabetes** | **Yes** | **Critical Risk Factor**; Genetics often predispose individuals to renal stress before it shows in labs. |
-| **Alcohol Consumption** | **18.94 Units** | **High**; Significant intake causes chronic dehydration and renal strain. |
-| **Water Quality** | **0 (Poor)** | Potential exposure to environmental toxins or heavy metals. |
-| **Diagnosis** | **CKD Positive** | **Confirmed**; Identified through risk factors rather than current lab failure. |
-
-### 4. Correlation Analysis
-As this is a synthetic dataset, the statistical correlation between lifestyle factors (like Water Quality or Medication Adherence) and clinical markers was found to be low. However, the **analytical workflow**
-established remains robust for application on real-world medical data.
-
-## Clinical Background: Why These Markers Matter
-- **Proteinuria:** Acts as a "driver" of the disease. Leaking protein is nephrotoxic, causing tubulointerstitial inflammation and permanent scarring (fibrosis).
-- **BUN:** An "indicator" of waste buildup. High levels signal that the kidney can no longer effectively clear metabolic byproducts.
-- **ACE Inhibitors:** The project references how these medications are used to lower internal kidney pressure and slow the progression of scarring.
-
-## How to Use This Repository
-1. **Clone the repo:** `git clone https://github.com/your-username/ckd-analysis.git`
-2. **Install Dependencies:** `pip install pandas seaborn matplotlib`
-3. **Run the Notebook:** Open `EDA_ckd.ipynb` to view the full visualization and correlation matrices.
-
-## Conclusions
-This project demonstrates that CKD is not a one-size-fits-all condition. By focusing on the interplay between GFR and Proteinuria, we can identify high-risk patients even when their primary lab results appear stable. This methodology is vital for moving from reactive treatment to proactive prevention.
+*Image Credit: [Shutterstock*](https://www.shutterstock.com/image-vector/chronic-kidney-disease-stages-ckd-healthy-2598407695?trackingId=b84416d6-0509-4b69-8144-b5c438db18a2&listId=searchResults)
 
 ---
-*Note: This project was created for educational purposes using a synthetic dataset.* 
+
+## 🌍 Global Context & Project Aim
+
+Chronic Kidney Disease (CKD) is a critical and mounting global health crisis, currently affecting approximately **850 million people** worldwide. Its impact is characterized by staggering epidemiological trends:
+
+* **Mortality Trend:** It is currently the **3rd fastest-growing** cause of death globally.
+
+
+* **Future Projections:** By 2040, CKD is projected to become the **5th leading cause** of years of life lost (YLL) globally.
+
+
+* **The "Silent" Disease:** In resource-limited settings, up to **90% of individuals** remain completely unaware of their condition until it reaches advanced, symptomatic stages.
+
+
+
+The primary goal of this project is to perform an exploratory data analysis (EDA) using `EDA_ckd_transformed.ipynb` to evaluate the dynamic effectiveness of various physiological biomarkers and environmental/lifestyle risk factors in screening, monitoring, and diagnosing CKD.
+
+---
+
+## 📊 Dataset & Advanced Transformation Pipeline
+
+This study utilizes a health record dataset consisting of **1,659 patients**.
+
+> 📝 **Data Integrity Note:** This is a synthetic dataset generated for educational and analytical workflow testing purposes. While variables closely mirror real-world parameters, the data has been cleanly optimized for evaluation workflows, categorical mappings, and advanced statistical visualizations.
+> 
+> 
+
+### 🛠️ Excel & Power Query Data Transformations
+
+To build a more readable, context-driven clinical narrative, the raw data underwent structured transformations in **Excel** and **Power Query** prior to its notebook exploration:
+
+* **Nominal Categorical Mapping:** Originally encoded numeric or binary categorical variables were mapped into descriptive, nominal categories (e.g., transforming binary values into descriptive strings) to tell a clearer story with the data.
+* **Missing Value Imputation:** During notebook validation, an anomaly of **180 missing values** was detected under `EducationLevel`. Cross-referencing revealed these represented individuals with no formal schooling. The entries were explicitly cleaned and handled by filling the missing records with the descriptive nominal string `"No Formal Education"`.
+
+
+
+---
+
+## 🧬 Diagnostic Benchmark Summary: All 5 Biomarkers
+
+Modern renal diagnostics rely on distinguishing between **functional biomarkers** (tracking current filtration efficiency) and **structural indicators** (revealing cellular or microvascular damage).
+
+In `EDA_ckd_transformed.ipynb`, we evaluate the five foundational biomarkers across the entire cohort:
+
+1. **Serum Creatinine:** A byproduct of muscle metabolism used to compute total GFR; elevated blood levels signal compromised filtration.
+
+
+2. **Urine Albumin-to-Creatinine Ratio (ACR):** The gold standard for structural damage; tracking "leaky" protein barriers.
+
+
+3. **Proteinuria (Urine Protein):** A broader indicator of glomerular and tubulointerstitial injury.
+
+
+4. **Glomerular Filtration Rate (GFR):** The overall indicator of functional filtration volume per minute.
+
+
+5. **Blood Urea Nitrogen (BUN):** Measures metabolic urea waste clearance in the bloodstream.
+
+
+
+The performance models generated below showcase the individual accuracy and collective diagnostic strength of these markers:
+
+### 📊 Performance Summary: Diagnostic Accuracies vs. Mismatches
+
+The plot in **image_fc86fc.png** highlights how accurately each biomarker stands independently against the confirmed diagnostic state, alongside their unique misclassification profiles (False Alarms vs. Silent Cases):
+
+* **Serum Creatinine** offers the highest individual diagnostic accuracy at **83.5%**, showing only 73 false alarms but leaving 200 cases silent.
+* **BUN Levels** hold the lowest isolated accuracy at **67.0%**, significantly prone to missing diagnoses with **479 silent cases**.
+* **Structural indicators (ACR & ProteinInUrine)** maintain robust performance profiles (**82.4%** and **77.5%** respectively), demonstrating their critical role in catching underlying tissue pathology early.
+
+---
+
+## 🔍 The Multi-Stage Screening Cascade
+
+Because individual biomarkers are prone to distinct error profiles, clinical screening rarely relies on a single metric. The waterfall sequence below tracks how a positive cohort of **1,524 patients** is filtered across consecutive biomarker tests, highlighting how structural and functional tests catch different overlapping populations until every single case is accounted for:
+
+### 📉 Step-by-Step Diagnostic Elimination
+
+| Step | Patients Remaining | Patients Caught | Diagnostic Context |
+| --- | --- | --- | --- |
+| **0. Initial Positive Population** | **1,524** | **0** | Starting group of verified positive diagnoses. |
+| **1. Filter: GFR** | **387** | **1,137** | Volumetric filtration captures the primary bulk of active kidney degradation. |
+| **2. Filter: ACR** | **40** | **347** | Micro-albuminuria damage filters catch an additional wave of silent cases where filtration volume seemed normal. |
+| **3. Filter: Serum Creatinine** | **3** | **37** | Metabolic muscle byproducts resolve nearly all remaining baseline oversights. |
+| **4. Filter: BUNLevels** | **1** | **2** | Blood urea clearance isolates the true hidden outlier population. |
+| **5. Filter: ProteinInUrine** | **0** | **1** | The final macro-protein filter resolves the final remaining case. |
+
+---
+
+## ⚠️ Environmental & Lifestyle Risk Profiles
+
+Beyond clinical labs, macro-environmental factors and lifestyle choices directly modulate renal microvascular stress. The twin-panel visualization in **image_fc8439.png** maps out the distinct prevalence rates of risk components between active CKD patients and healthy control populations:
+
+* **Genetic Pre-disposition:** Family histories of Hypertension (**30.4%**) and Diabetes (**25.9%**) score significantly higher among active CKD patient profiles than healthy populations, functioning as core risk multipliers.
+* **Environmental Pressures:** Poor water quality and chemical/heavy metal tracking consistently correlate with elevated disease tracking, serving as a reminder that structural tissue protection requires strict systemic and environmental mitigation.
+
+---
+
+## 🚀 How to Use This Repository
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/ckd-analysis.git
+cd ckd-analysis
+
+```
+
+### 2. Set Up Your Environment
+
+Ensure you have the required open-source data science tools installed:
+
+```bash
+pip install pandas seaborn matplotlib openpyxl
+
+```
+
+### 3. Run the Analysis Workspace
+
+Open your local editor or terminal to interact with the transformed notebook:
+
+```bash
+jupyter notebook EDA_ckd_transformed.ipynb
+
+```
