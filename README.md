@@ -20,7 +20,7 @@ Chronic Kidney Disease (CKD) is a critical and mounting global health crisis, cu
 
 
 
-The primary goal of this project is to perform an exploratory data analysis (EDA) using `EDA_ckd_transformed.ipynb` to evaluate the dynamic effectiveness of various physiological biomarkers and environmental/lifestyle risk factors in screening, monitoring, and diagnosing CKD.
+The primary goal of this project is to perform an exploratory data analysis (EDA) using a synthetic dataset to evaluate the dynamic effectiveness of various physiological biomarkers and environmental/lifestyle risk factors in screening, monitoring, and diagnosing CKD.
 
 ---
 
