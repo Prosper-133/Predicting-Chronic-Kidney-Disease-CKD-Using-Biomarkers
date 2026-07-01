@@ -31,6 +31,8 @@ This study utilizes a health record dataset consisting of **1,659 patients**.
 
 [Raw Data](https://github.com/Prosper-133/Understanding-Biomakers-for-Chronic-Kidney-Disease-CKD-prevention/blob/main/Chronic_Kidney_Dsease_data.csv)
 
+For deeper understanding of the dataset, check out the [Project Report](https://github.com/Prosper-133/Understanding-Biomakers-for-Chronic-Kidney-Disease-CKD-prevention/blob/main/Project_Report.pdf)
+
 > 📝 **Data Integrity Note:** This is a synthetic dataset generated for educational and analytical workflow testing purposes. While variables closely mirror real-world parameters, the data has been cleanly optimized for evaluation workflows, categorical mappings, and advanced statistical visualizations.
 > 
 > 
@@ -146,6 +148,20 @@ Some risk factors have very high percentages, but because they are equally commo
 #### 4. Low-Prevalence Indicators
 
 * **Previous Acute Kidney Injury (AKI) & Heavy Metals Exposure:** These occupy the bottom slots. While an AKI history is slightly higher in the sick group ($10.5\%$ vs. $11.1\%$—another minor uniform layout fluctuation), their low overall numbers ($<11\%$) mean they are rare attributes across the entire cohort.
+
+---
+
+## 🎯 Conclusion
+
+This project demonstrates how data science can be used to combat Chronic Kidney Disease (CKD) by turning raw health records into clear, lifesaving insights.
+
+### 🔑 Key Takeaways
+
+* **No Single Test is Enough:** Individual tests have blind spots, often leading to false alarms or missed cases. The project proves that a **multi-stage screening cascade**—combining blood tests (to check how well the kidney filters waste, like GFR) and urine tests (to check for physical tissue damage, like ACR)—is the only way to catch $100\%$ of cases early.
+* **The Real Culprits:** While lifestyle habits like smoking are highly common overall, a **Family History of Kidney Disease** and **Recurrent UTIs** stand out as the strongest specific warning signs for CKD in this dataset.
+* **Smart Data Prep:** By using Excel, Power Query, and Python, this workflow successfully turned messy raw data into a clear clinical story, showing how data engineering directly supports better healthcare decisions.
+
+Ultimately, this repository provides a clear blueprint for using data analytics to catch "silent" chronic diseases early—ensuring patients are flagged and treated before irreversible damage occurs.
 
 ---
 
