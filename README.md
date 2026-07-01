@@ -1,7 +1,6 @@
 ## 🩺 Understanding Biomarkers and Risk Factors for Chronic Kidney Disease (CKD) Prevention
 
-<img width="337" height="149" alt="Kidney" src="https://github.com/user-attachments/assets/e335bafb-711e-4d71-8179-c4412cc9f0b4" />
-
+<img width="330" height="148" alt="CKD" src="https://github.com/user-attachments/assets/76415464-2256-4e1c-902c-50e5c0d332ed" />
 
 *Stages of CKD* [shutterstock](https://www.shutterstock.com/image-vector/chronic-kidney-disease-stages-ckd-healthy-2598407695?trackingId=b84416d6-0509-4b69-8144-b5c438db18a2&listId=searchResults)
 
