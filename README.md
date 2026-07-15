@@ -88,7 +88,7 @@ The comparative analysis reveals distinct trade-offs in diagnostic performance a
 
 * **The Pathophysiological Driver:** It is vital to ground these statistical metrics in clinical reality: **structural or functional damage to the kidney is what ultimately determines the level of each biomarker.** 
 
-**Functional decline** represents an impairment in the kidney's dynamic operations—its ability to filter blood and clear metabolic waste. This physiological slowdown is what drives the blood-based markers, causing a plummeting **GFR** and a sharp rise in **Serum Creatinine** and **BUN Levels**.
+**Functional decline** represents an impairment in the kidney's dynamic operations, its ability to filter blood and clear metabolic waste. This physiological slowdown is what drives the blood-based markers, causing a plummeting **GFR** and a sharp rise in **Serum Creatinine** and **BUN Levels**.
 
 **Structural damage**, conversely, represents a physical, anatomical breakdown of the renal tissue itself, such as glomerular tearing or interstitial scarring (fibrosis). This anatomical injury compromises the physical filtration barriers, allowing large molecules to slip through, which directly echoes in urine-based markers like **ProteinInUrine** and **ACR**.
 
