@@ -2,7 +2,7 @@
 
 <img width="2816" height="1536" alt="CKD" src="https://github.com/user-attachments/assets/d8cce68f-0670-43b6-bf33-a18a7533d5f3" />
 
-Healthy and Disesased Kidney (Created with Gemini AI)
+Healthy and Diseased Kidney (Created with Gemini AI)
 
 
 
