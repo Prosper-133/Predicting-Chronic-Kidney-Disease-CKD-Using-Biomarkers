@@ -1,6 +1,7 @@
 ## 🩺 Understanding Biomarkers and Risk Factors for Chronic Kidney Disease (CKD) Prevention
 
-<img width="2816" height="1536" alt="CKD" src="https://github.com/user-attachments/assets/d8cce68f-0670-43b6-bf33-a18a7533d5f3" />
+<img width="1408" height="768" alt="CKD" src="https://github.com/user-attachments/assets/2aa8ec3c-b415-40f9-9067-a2a58d1f4fde" />
+
 
 Healthy and Diseased Kidney (Created with Gemini AI)
 
